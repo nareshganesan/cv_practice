@@ -15,5 +15,11 @@ for (x, y, w, h) in rects:
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
 # show the detected faces
-cv2.imshow("Faces", image)
-cv2.waitKey(0)
+try:
+    while(1):
+        cv2.imshow("Faces", image)
+        wait = cv2.waitKey(33)
+except KeyboardInterrupt:
+    # wait key values are platform dependent.
+    print
+    print "Exiting."
