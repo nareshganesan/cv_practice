@@ -2,7 +2,7 @@ import os
 import sys
 import numpy as np
 import argparse
-import imutils
+# import imutils
 import cv2
 
 sys.path.append(os.path.join(os.path.dirname(__file__),'utils'))
